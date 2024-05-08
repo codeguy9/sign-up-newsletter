@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Newsletter sign-up
+	</title>
+    <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body>
+	
+	<main>
+		<aside class="left">
+			<h1>Stay updated!</h1>
+			<p>Join 60,000+ product managers receiving monthly updates on:</p>
+			<ul id="checks">
+				<li>Product discovery and building what matters</li>
+				<li>Measuring to ensure updates are a success</li>
+				<li>And much more!</li>
+			</ul>
+			
+		<form id="myForm">
+			<label for="email">Email address</label>
+			<input type="email" id="email" placeholder="email@company.com" name="email">
+			<p id="error-message"></p>
+			<button id="subsribe" type="submit">Subscribe to monthly newsletter</button>
+		</form>
+	   </aside>
+		
+		<aside class="right">
+			<img src="images/illustration-sign-up-desktop.svg" alt="desktop">
+		</aside>
+	</main>
+	
+	<div id="success">
+		<img src="images/icon-success.svg" alt="icon success">
+		<h2>Thanks for subscribing!</h2>
+		<p>A confirmation email has been sent to ash@loremcompany.com . Please open it and click the button inside to confirm your subscription.</p>
+		<button id="dismiss" type="submit">Dismiss message</button>
+		
+	</div>
+	
+	
+	
+		<script type="text/javascript">
+			
+			const main = document.querySelector('main');
+			const successMessage = document.querySelector('#success');
+			const userInput = document.querySelector('#email').value;
+			const emailError = document.querySelector('#error-message');
+			const form = document.querySelector('#myForm');
+			
+
+			const email = document.getElementById("email");
+
+			
+			
+		
+			
+			
+			
+		</script>
+</body>
+</html>

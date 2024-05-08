@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: #153448;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 400px 350px;
+	grid-template-rows: 1fr;
+	align-items: center;
+	gap: 3rem;
+	background: white;
+	padding: 2rem;
+	border-radius: 20px;
+	
+	& .left > h1 {
+		font-size: 4rem;
+		color: #153448;
+		margin:0;
+		padding:0 0 1.2rem 0;
+	}
+	
+	& aside {
+		margin:0;
+		padding:0;
+		& p {
+			color: hsl(235, 18%, 26%);
+			padding:0 0 1.2rem 0;	
+		}	
+	}
+	
+	& .right img {
+		width: 100%;
+	}
+}
+
+#checks {
+	list-style: none;
+	position: relative;
+	padding-bottom: 1.2rem;
+}
+#checks li::before {
+	content: url("images/icon-list.svg");
+	position: absolute;
+	left: 0;
+	
+	
+	
+} 
+
+#checks li {
+	padding-bottom: 1rem;
+}
+
+#user-input {
+	color: hsl(4, 100%, 67%);
+	margin:0;
+	padding-bottom:0 0 15px 0;
+	font-size: .8rem;
+	
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+	
+	
+	& label {
+		font-size: .8rem;
+		color: #153448;
+		font-weight: bold;
+		padding-bottom: .6rem;
+		
+	}
+	
+	& input {
+		height: 50px;
+		border-radius: 10px;
+		border: 1px solid grey;
+		margin-bottom: 1.5rem;
+		padding-left: 1rem;
+	}
+	
+	& button {
+		color: white;
+		padding: 15px 32px;
+		border: none;
+		border-radius: 10px;
+		background: #153448;
+		cursor: pointer;
+	}
+	
+	& button:hover {
+		background: linear-gradient(to right, #FF5BAE, hsl(4, 100%, 67%));
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	main {
+		display: flex;
+		
+		flex-flow: column-reverse wrap;
+		padding:0;
+		
+		
+		& .right {
+			margin:0;
+			padding:0;
+			& img {
+				width:100%;
+				
+			}
+		}
+		
+		& .left {
+			padding: 1rem;
+			
+			& h1 {
+				font-size: 3rem;
+			}
+		}
+		
+	}
+}
+
+/* -----------------------------------------*/
+
+#success {
+	width: 28vw;
+	background: white;
+	padding: 1.6rem;
+	color: #153448;
+	border-radius: 20px;
+	
+	
+	& h2 {
+		color: #153448;
+		font-size: 3rem;
+		padding:0;
+		margin:0;
+	}
+	
+	& p {
+		font-size: .8rem;
+		line-height: 1.5;
+		padding:0;
+		width: 80%;
+		padding-bottom: 1.5rem;
+	}
+	
+	& img {
+		width: 50px;
+		padding-bottom: 2rem;
+	}
+	
+	& #dismiss {
+		width: 100%;
+		padding: 12px 32px;
+		background-color: #153448;
+		border-radius: 10px;
+		border: none;
+		color: white;
+		cursor: pointer;
+	}
+	
+	& #dismiss:hover {
+		background: linear-gradient(to right, #FF5BAE, hsl(4, 100%, 67%));
+	}
+}
+
